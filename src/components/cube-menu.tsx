@@ -12,7 +12,7 @@ const pages = [
   { name: "Projects", path: "/projects", color: "#ff3131" },
   { name: "Book", path: "/book", color: "#ff3131" },
   { name: "Invest", path: "/invest", color: "#ff3131" },
-  { name: "Learn", path: "/lean", color: "#ff3131" },
+  { name: "Learn", path: "/learn", color: "#ff3131" },
 ]
 
 function CubeFaces() {
@@ -37,7 +37,6 @@ function CubeFaces() {
   // Size of the cube
   const cubeSize = 1.15
   // Thickness of the border (smaller = thinner border)
-  const borderThickness = 0.05
 
   // Define positions as tuples with exactly 3 elements
   const positions: [number, number, number][] = [
@@ -65,7 +64,9 @@ function CubeFaces() {
       {positions.map((position, index) => (
         <mesh
           key={index}
-          ref={(el) => (meshRefs.current[index] = el)}
+          ref={(el) => {
+            meshRefs.current[index] = el
+          }}
           position={position}
           rotation={rotations[index]}
           onClick={() => handleClick(index)}

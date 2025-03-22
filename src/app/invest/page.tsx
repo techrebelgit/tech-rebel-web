@@ -46,7 +46,7 @@ export default function InvestPage() {
               <Shield className="h-10 w-10 mb-4 text-rebel-red" />
               <h3 className="text-xl font-bold mb-2">Proprietary Technology</h3>
               <p className="text-gray-700">
-                We've developed unique, patented technologies that give us a competitive edge in the market.
+                We&apos;ve developed unique, patented technologies that give us a competitive edge in the market.
               </p>
             </div>
 
@@ -62,7 +62,7 @@ export default function InvestPage() {
               <Zap className="h-10 w-10 mb-4 text-rebel-red" />
               <h3 className="text-xl font-bold mb-2">Social Impact</h3>
               <p className="text-gray-700">
-                We're committed to creating technology that makes a positive difference in the world.
+                We&apos;re committed to creating technology that makes a positive difference in the world.
               </p>
             </div>
           </div>
@@ -76,7 +76,7 @@ export default function InvestPage() {
                 <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Active</span>
               </div>
               <p className="text-gray-700 mb-6">
-                We're currently raising $30M in our Series B round to scale our operations and accelerate product
+                We&apos;re currently raising $30M in our Series B round to scale our operations and accelerate product
                 development.
               </p>
               <Button className="flex items-center">
@@ -90,7 +90,7 @@ export default function InvestPage() {
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Ongoing</span>
               </div>
               <p className="text-gray-700 mb-6">
-                We're open to strategic partnerships that can help us grow and expand our reach.
+                We&apos;re open to strategic partnerships that can help us grow and expand our reach.
               </p>
               <Button variant="outline" className="flex items-center">
                 Discuss Partnership <ArrowUpRight className="ml-2 h-4 w-4" />

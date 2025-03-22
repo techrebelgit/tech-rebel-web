@@ -32,7 +32,7 @@ export default function AboutPage() {
               Founded by a product leader and blockchain architect with deep roots in R&D, Tech Rebel is where
               bleeding-edge tech meets business logic.
               <br />
-              We've helped ship blockchain products across a wide range of use cases—
+              We&apos;ve helped ship blockchain products across a wide range of use cases—
               <span className="font-bold">
                 trading technologies, OTC platforms, cross-border payments, NFT-based access, memecoins, and
                 traceability

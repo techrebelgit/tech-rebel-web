@@ -16,7 +16,7 @@ export default function Navbar() {
     { name: "Projects", href: "/projects" },
     { name: "Book", href: "/book" },
     { name: "Invest", href: "/invest" },
-    { name: "Lean", href: "/lean" },
+    { name: "Learn", href: "/learn" },
   ]
 
   return (

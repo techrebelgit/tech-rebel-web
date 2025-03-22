@@ -95,7 +95,7 @@ export default function BookPage() {
 
                   <div className="pt-2 border-t border-rebel-gray">
                     <p className="text-sm text-gray-600">
-                      Select a date and time from the calendar to schedule your session. You'll receive a confirmation
+                      Select a date and time from the calendar to schedule your session. You&apos;ll receive a confirmation
                       email with meeting details.
                     </p>
                   </div>

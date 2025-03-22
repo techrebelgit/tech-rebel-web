@@ -70,7 +70,7 @@ export default function ProjectsPage() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-24 pb-16">
         <h1 className="text-5xl font-bold mb-8">Our Projects</h1>
         <p className="text-xl max-w-3xl mb-12">
-          At Tech Rebel, we're working on cutting-edge projects that push the boundaries of what's possible. Explore our
+          At Tech Rebel, we&apos;re working on cutting-edge projects that push the boundaries of what&apos;s possible. Explore our
           current initiatives below.
         </p>
 
