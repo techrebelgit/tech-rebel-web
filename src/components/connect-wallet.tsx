@@ -1,42 +1,33 @@
-"use client"
+"use client";
 
-import { createThirdwebClient } from "thirdweb"
-import { ConnectButton, ThirdwebProvider } from "thirdweb/react"
+import { ConnectButton } from "thirdweb/react";
+import { client } from "@/lib/client";
 import { createWallet } from "thirdweb/wallets";
-import { base } from "thirdweb/chains";
 
 interface ConnectWalletProps {
-  className?: string
+  className?: string;
 }
+
+const wallets = [
+  createWallet("io.metamask"),
+  createWallet("me.rainbow"),
+  createWallet("io.rabby"),
+  createWallet("io.zerion.wallet"),
+  createWallet("com.coinbase.wallet"),
+];
 
 export default function ConnectWallet({ className = "" }: ConnectWalletProps) {
-  const client = createThirdwebClient({
-    clientId: process.env.NEXT_PUBLIC_THIRDWEB_CLIENT_ID || "",
-  })
-
-  const wallets = [
-    createWallet("com.coinbase.wallet"),
-    createWallet("io.metamask"),
-    createWallet("me.rainbow"),
-    createWallet("io.rabby"),
-    createWallet("io.zerion.wallet"),
-  ]
-
   return (
     <div className={className}>
-      <ThirdwebProvider>
       <ConnectButton
-          client={client}
-          wallets={wallets}
-          chain={ base }
-          connectModal={{
-            size: "compact",
-            showThirdwebBranding: false,
-            title: "Connect Your Wallet",
-          }}
-        />
-      </ThirdwebProvider>
+        client={client}
+        wallets={wallets}
+        connectModal={{
+          size: "compact",
+          showThirdwebBranding: false,
+          title: "Connect Your Wallet",
+        }}
+      />
     </div>
-  )
+  );
 }
-

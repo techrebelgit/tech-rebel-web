@@ -1,7 +1,49 @@
+"use client"
+
+import { useState } from "react"
 import Navbar from "@/components/navbar"
 import { Button } from "@/components/ui/button"
+import ConnectWallet from "../../components/connect-wallet"
+import { Loader2 } from "lucide-react"
 
 export default function MintPage() {
+  const [isLoading, setIsLoading] = useState(false)
+  const [mintAmount, setMintAmount] = useState(1)
+  const [mintSuccess, setMintSuccess] = useState(false)
+  const [mintError, setMintError] = useState<string | null>(null)
+  const [txHash, setTxHash] = useState<string | null>(null)
+  const [walletAddress, setWalletAddress] = useState<string | null>(null)
+
+  // Listen for wallet connection events
+  const handleWalletConnect = (address: string) => {
+    setWalletAddress(address)
+  }
+
+  const handleMint = async () => {
+    if (!walletAddress) return
+
+    setIsLoading(true)
+    setMintSuccess(false)
+    setMintError(null)
+    setTxHash(null)
+
+    try {
+      // Simulate a successful mint for now
+      await new Promise((resolve) => setTimeout(resolve, 2000))
+
+      // Mock transaction hash
+      const mockTxHash = "0x" + Array.from({ length: 64 }, () => Math.floor(Math.random() * 16).toString(16)).join("")
+
+      setTxHash(mockTxHash)
+      setMintSuccess(true)
+    } catch (error) {
+      console.error("Mint error:", error)
+      setMintError("Failed to mint NFT")
+    } finally {
+      setIsLoading(false)
+    }
+  }
+
   return (
     <main className="min-h-screen bg-white text-rebel-black">
       <Navbar />
@@ -31,7 +73,71 @@ export default function MintPage() {
                 <span>Available:</span>
                 <span className="font-bold">750</span>
               </div>
-              <Button className="w-full mt-4">Connect Wallet to Mint</Button>
+
+              <div className="mt-4">
+                <ConnectWallet className="w-full" onWalletConnected={handleWalletConnect} />
+              </div>
+
+              {walletAddress && (
+                <>
+                  <div className="flex items-center justify-between mt-4">
+                    <span>Quantity:</span>
+                    <div className="flex items-center space-x-2">
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        onClick={() => setMintAmount(Math.max(1, mintAmount - 1))}
+                        disabled={mintAmount <= 1}
+                      >
+                        -
+                      </Button>
+                      <span className="w-8 text-center">{mintAmount}</span>
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        onClick={() => setMintAmount(Math.min(10, mintAmount + 1))}
+                        disabled={mintAmount >= 10}
+                      >
+                        +
+                      </Button>
+                    </div>
+                  </div>
+
+                  <Button className="w-full mt-4" onClick={handleMint} disabled={isLoading}>
+                    {isLoading ? (
+                      <>
+                        <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                        Minting...
+                      </>
+                    ) : (
+                      `Mint ${mintAmount} NFT${mintAmount > 1 ? "s" : ""}`
+                    )}
+                  </Button>
+
+                  {mintSuccess && (
+                    <div className="mt-4 p-4 bg-green-100 text-green-800 rounded-md">
+                      <p className="font-medium">Successfully minted your NFT!</p>
+                      {txHash && (
+                        <a
+                          href={`https://basescan.org/tx/${txHash}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm underline mt-2 block"
+                        >
+                          View transaction
+                        </a>
+                      )}
+                    </div>
+                  )}
+
+                  {mintError && (
+                    <div className="mt-4 p-4 bg-red-100 text-red-800 rounded-md">
+                      <p className="font-medium">Error minting NFT</p>
+                      <p className="text-sm mt-1">{mintError}</p>
+                    </div>
+                  )}
+                </>
+              )}
             </div>
           </div>
 
@@ -56,6 +162,14 @@ export default function MintPage() {
                 <li>Your NFTs will appear in your connected wallet</li>
               </ol>
             </div>
+
+            {walletAddress && (
+              <div className="bg-rebel-light p-6 rounded-xl border border-rebel-gray shadow-sm">
+                <h3 className="text-xl font-bold mb-4">Connected Wallet</h3>
+                <p className="font-mono text-sm break-all">{walletAddress}</p>
+                <p className="mt-4 text-sm">Make sure you're connected to the Base network to mint your NFT.</p>
+              </div>
+            )}
           </div>
         </div>
       </div>

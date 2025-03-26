@@ -1,20 +1,22 @@
-"use client"
+"use client";
 
-import type React from "react"
+import { ReactNode, useState } from "react";
+import { ThemeProvider } from "@/components/theme-provider";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
-import { ThemeProvider } from "@/components/theme-provider"
-import { useState } from "react"
+import { ThirdwebProvider } from "thirdweb/react";
 
-export function Providers({ children }: { children: React.ReactNode }) {
-  const [queryClient] = useState(() => new QueryClient())
+
+export function Providers({ children }: { children: ReactNode }) {
+  const [queryClient] = useState(() => new QueryClient());
 
   return (
     <QueryClientProvider client={queryClient}>
-      <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
-        {children}
-      </ThemeProvider>
+      <ThirdwebProvider>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
+          {children}
+        </ThemeProvider>
+      </ThirdwebProvider>
     </QueryClientProvider>
-  )
+  );
 }
-
