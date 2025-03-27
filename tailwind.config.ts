@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss"
+import type { PluginAPI } from "tailwindcss/types/config"
 
 const config = {
   darkMode: ["class"],
@@ -79,9 +80,48 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      
+      typography: (theme: PluginAPI["theme"]) => ({
+        DEFAULT: {
+          css: {
+            maxWidth: '100%',
+            color: theme('colors.rebel.black'),
+            a: {
+              color: theme('colors.rebel.red'),
+              '&:hover': {
+                textDecoration: 'underline',
+              },
+            },
+            h1: { fontSize: '2.25rem' },
+            h2: { fontSize: '1.75rem' },
+            h3: { fontSize: '1.5rem' },
+            p: { marginBottom: '1.25em' },
+            ul: {
+              paddingLeft: '1.5em',
+              marginBottom: '1.25em',
+              listStyleType: 'disc',
+            },
+            ol: {
+              paddingLeft: '1.5em',
+              marginBottom: '1.25em',
+              listStyleType: 'decimal',
+            },
+            li: {
+              marginBottom: '0.5em',
+            },
+            img: {
+              borderRadius: theme('borderRadius.lg'),
+            },
+          },
+        },
+      }),
+      
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"),
+    require("@tailwindcss/typography"),
+  ],
+  
 } satisfies Config
 
 export default config

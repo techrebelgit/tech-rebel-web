@@ -10,7 +10,7 @@ import { marked } from "marked"
 
 // Course metadata
 const courseData = {
-  title: "Blockchain Fundamentals",
+  title: "Layer 1 blockchains",
   description:
     "Understand the core concepts of blockchain technology, including distributed ledgers, consensus mechanisms, and cryptography.",
   level: "Beginner",

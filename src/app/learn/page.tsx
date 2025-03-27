@@ -24,10 +24,10 @@ export default function LearnPage() {
     // For now, we'll use a static list
     const availableCourses: Course[] = [
       {
-        slug: "blockchain-fundamentals",
-        title: "Blockchain Fundamentals",
+        slug: "layer-1",
+        title: "Blockchain Layer 1s: Fundamentos, Arquitectura y Ecosistema",
         description:
-          "Understand the core concepts of blockchain technology, including distributed ledgers, consensus mechanisms, and cryptography.",
+          "Explora el corazón de las blockchains: las Capa 1. Aprende cómo funcionan Bitcoin, Ethereum, Stellar y otras redes desde su arquitectura técnica hasta sus ecosistemas, capacidades de escalado e interoperabilidad.",
         level: "Beginner",
         subtopics: 5,
       },
