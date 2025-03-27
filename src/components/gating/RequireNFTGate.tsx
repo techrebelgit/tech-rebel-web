@@ -8,7 +8,7 @@ import { getOwnedNFTs } from "thirdweb/extensions/erc721";
 import { client } from "@/lib/client";
 import { base } from "thirdweb/chains"; // or your chosen chain
 
-const NFT_CONTRACT_ADDRESS = "0x08fD8A67Db95DBb7A6EAc0766008dFE2053557F0";
+const NFT_CONTRACT_ADDRESS = "0x341e31A34A7672C2f2693fB5b8313cE7F45ff760";
 
 const contract = getContract({
   client,

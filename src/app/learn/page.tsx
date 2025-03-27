@@ -41,7 +41,7 @@ export default function LearnPage() {
   return (
     <main className="min-h-screen bg-white text-rebel-black">
       <Navbar />
-      <div className="container mx-auto px-4 pt-24">
+      <div className="container mx-auto px-12 pt-24">
         <h1 className="text-5xl font-bold mb-8">Aprenda Blockchain con Tech Rebel</h1>
         <p className="text-xl max-w-3xl mb-12">
           Expanda su conocimiento de blockchain con los siguientes modulos de aprendizaje.
