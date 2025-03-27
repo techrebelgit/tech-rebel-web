@@ -16,19 +16,19 @@ export default function BookPage() {
       <Navbar />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 pt-24 pb-16">
         <h1 className="text-5xl font-bold mb-6">Book a 1:1 Session</h1>
-        <ConnectWallet/>
+        
         <p className="text-xl mb-12">
           Schedule a personalized strategy and product feedback session with our team. These exclusive sessions are only
           available to Tech Rebel NFT holders.
         </p>
-
+        <ConnectWallet className=" p-6"/>
         {!walletAddress ? (
           <div className="bg-rebel-light p-8 rounded-xl border border-rebel-gray shadow-sm text-center">
             <h2 className="text-2xl font-bold mb-4">Connect Your Wallet</h2>
             <p className="mb-8">
               You need to connect your wallet to book a 1:1 session. This allows us to verify your NFT ownership.
             </p>
-            <div className="flex justify-center">
+            <div className="flex justify-center p-6">
               <ConnectWallet className="w-full max-w-xs" />
             </div>
           </div>

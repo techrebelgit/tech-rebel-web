@@ -15,7 +15,13 @@ export default function NFTInfo() {
   return (
     <NFTProvider contract={contract} tokenId={0n}>
       <div className="aspect-square bg-rebel-red rounded-xl mb-6 overflow-hidden">
-        <NFTMedia className="w-full h-full object-cover rounded-xl" />
+        <NFTMedia className="w-full h-full object-cover rounded-xl"
+         mediaResolver={{
+            src: "/NFTImage.png",
+            // Poster is applicable to medias that are videos and audios
+            poster: "/NFTImage.png",
+          }}
+        />
       </div>
 
       <div className="flex flex-col space-y-2">
