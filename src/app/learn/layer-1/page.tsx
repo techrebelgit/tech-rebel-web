@@ -268,7 +268,7 @@ El Trilema de la Blockchain, acuñado por Vitalik Buterin, describe la dificulta
   - Anteriormente Proof of Work → ahora **Proof of Stake** (desde **The Merge**, 2022)
   - Validadores aseguran la red apostando ETH
 
-  ![PoW PoS](/images/courses/layer-1/PowPos.png)
+  ![PoW PoS](/images/courses/layer-1/Pos.png)
 
 ---
 
