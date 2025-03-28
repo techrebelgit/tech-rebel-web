@@ -42,7 +42,7 @@ Este curso va más allá de lo básico y te llevará por un recorrido completo a
 
 - **Definición**: Una blockchain de Capa 1 (L1) es la red base que procesa y finaliza transacciones sin depender de otra red. Mantiene su propio mecanismo de consenso, libro mayor y toda su infraestructura.
 
-![Layer 1 Networks Overview](/images/courses/layer-1/ayer-1-triangle.png)
+![Layer 1 Triangle](/images/courses/layer-1/layer-1-triangle.png)
 
 - **Características clave**:
   - Token nativo (por ejemplo: BTC, ETH, XLM)
@@ -68,7 +68,7 @@ El Trilema de la Blockchain, acuñado por Vitalik Buterin, describe la dificulta
 2. **Seguridad** – Resistencia a ataques y protección de datos
 3. **Escalabilidad** – Capacidad de manejar muchas transacciones de forma rápida y económica
 
-![Layer 1 Networks Overview](/images/courses/layer-1/blockchain-trilemma.png)
+![Blockchain Trilemma](/images/courses/layer-1/blockchain-trilemma.png)
 
 
 
@@ -128,7 +128,7 @@ El Trilema de la Blockchain, acuñado por Vitalik Buterin, describe la dificulta
       id: "Bitcoin",
       title: "Bitcoin",
       content: `
-![Layer 1 Networks Overview](/images/courses/layer-1/bitcoin.png)
+![Bitcoin Logo](/images/courses/layer-1/bitcoin.png)
 
 - **Creado por**: Satoshi Nakamoto (whitepaper en 2008)
 - **Caso de uso principal**: Reserva de valor digital y moneda peer-to-peer
@@ -137,7 +137,7 @@ El Trilema de la Blockchain, acuñado por Vitalik Buterin, describe la dificulta
   - Sin permisos (*permissionless*), resistente a la censura
   - Alta seguridad gracias a Proof of Work (PoW)
 
-![Layer 1 Networks Overview](/images/courses/layer-1/bitcoin-genesis-block.png)
+![Bitcoin Genesis block](/images/courses/layer-1/bitcoin-genesis-block.png)
 
 ---
 
@@ -154,7 +154,7 @@ El Trilema de la Blockchain, acuñado por Vitalik Buterin, describe la dificulta
 - **Tiempo de bloque**: ~10 minutos
 - **Finalidad de transacción**: Alcanzada tras múltiples confirmaciones (usualmente 6)
 
-![Layer 1 Networks Overview](/images/courses/layer-1/UTXO.png)
+![UTXO](/images/courses/layer-1/UTXO.png)
 
 ---
 
@@ -241,7 +241,7 @@ El Trilema de la Blockchain, acuñado por Vitalik Buterin, describe la dificulta
       content: `
 # 🌐 Ethereum
 
-![Layer 1 Networks Overview](/images/courses/layer-1/ethereum.png)
+![Ethereum Logo](/images/courses/layer-1/ethereum.png)
 
 
 - **Lanzado en**: 2015 por Vitalik Buterin y su equipo
@@ -267,7 +267,7 @@ El Trilema de la Blockchain, acuñado por Vitalik Buterin, describe la dificulta
   - Anteriormente Proof of Work → ahora **Proof of Stake** (desde **The Merge**, 2022)
   - Validadores aseguran la red apostando ETH
 
-  ![Layer 1 Networks Overview](/images/courses/layer-1/PoWPoS.png)
+  ![PoW PoS](/images/courses/layer-1/PoWPoS.png)
 
 ---
 
@@ -282,7 +282,7 @@ El Trilema de la Blockchain, acuñado por Vitalik Buterin, describe la dificulta
 ## **2.4 Escalado de Ethereum: Capas 2**
 
 La estrategia de Ethereum es la **escalabilidad modular**: mantener la capa base segura y descentralizada, y mover la ejecución a entornos más rápidos y baratos.
-![Layer 1 Networks Overview](/images/courses/layer-1/layer-1-triangle.png)
+![Layer 1 Triangle](/images/courses/layer-1/layer-1-triangle.png)
 
 ### 🔁 **Rollups (Estrategia principal de L2)**
 
@@ -398,7 +398,7 @@ Aún experimentales, con debate sobre su necesidad vs. zonas L2.
       content: `
 # Stellar
 
-  ![Layer 1 Networks Overview](/images/courses/layer-1/stellar.png)
+  ![Stellar Logo](/images/courses/layer-1/stellar.png)
 
 - **Lanzamiento**: 2014 por Jed McCaleb (cofundador de Ripple)
 - **Misión**: Inclusión financiera y transferencias internacionales de bajo costo
@@ -414,7 +414,7 @@ Aún experimentales, con debate sobre su necesidad vs. zonas L2.
   - Cuando varios grupos de confianza se superponen y coinciden, se logra **consenso** (es decir, acuerdo).
   - ¡Y así se valida una transacción de forma segura y rápida!
 
-    ![Layer 1 Networks Overview](/images/courses/layer-1/stellar-consensus.png)
+    ![Stellar consensus](/images/courses/layer-1/stellar-consensus.png)
 
 No hay mineros. No hay un jefe. Solo nodos confiando en otros nodos.
   - Ofrece finalidad rápida (~5 segundos) y alto rendimiento
@@ -554,7 +554,7 @@ No hay mineros. No hay un jefe. Solo nodos confiando en otros nodos.
   - **dApps intercadena** (liquidez unificada, identidades compartidas, etc.)
   - **Seguridad o consenso compartido** entre cadenas
 
-  ![Layer 1 Networks Overview](/images/courses/layer-1/Layer0.png)
+  ![Layer 0](/images/courses/layer-1/Layer0.png)
 ---
 
 ## **3.2 Formas de Interoperabilidad**
