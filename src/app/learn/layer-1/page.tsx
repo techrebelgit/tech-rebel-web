@@ -86,7 +86,8 @@ El Trilema de la Blockchain, acuñado por Vitalik Buterin, describe la dificulta
 
 - **Capa 1**: Maneja la seguridad base, consenso y datos principales
 - **Capa 2**: Se construye encima para escalar transacciones (rollups, sidechains, canales de pago)
-![Layer 1 Networks Overview](/images/courses/layer-1/layer-1-triangle.png)
+
+![Layer 1 Networks Overview](/images/courses/layer-1/Layer-1-triangle.png)
 
 ## **1.6 Evolución del Diseño de Capas 1**
 
@@ -267,7 +268,7 @@ El Trilema de la Blockchain, acuñado por Vitalik Buterin, describe la dificulta
   - Anteriormente Proof of Work → ahora **Proof of Stake** (desde **The Merge**, 2022)
   - Validadores aseguran la red apostando ETH
 
-  ![PoW PoS](/images/courses/layer-1/PoWPoS.png)
+  ![PoW PoS](/images/courses/layer-1/PowPos.png)
 
 ---
 
@@ -282,7 +283,7 @@ El Trilema de la Blockchain, acuñado por Vitalik Buterin, describe la dificulta
 ## **2.4 Escalado de Ethereum: Capas 2**
 
 La estrategia de Ethereum es la **escalabilidad modular**: mantener la capa base segura y descentralizada, y mover la ejecución a entornos más rápidos y baratos.
-![Layer 1 Triangle](/images/courses/layer-1/layer-1-triangle.png)
+![Layer 1 Triangle](/images/courses/layer-1/Layer-1-triangle.png)
 
 ### 🔁 **Rollups (Estrategia principal de L2)**
 
