@@ -414,7 +414,7 @@ Aún experimentales, con debate sobre su necesidad vs. zonas L2.
   - Cuando varios grupos de confianza se superponen y coinciden, se logra **consenso** (es decir, acuerdo).
   - ¡Y así se valida una transacción de forma segura y rápida!
 
-    ![Layer 1 Networks Overview](/images/courses/layer-1/Stellar-consensus.png)
+    ![Layer 1 Networks Overview](/images/courses/layer-1/stellar-consensus.png)
 
 No hay mineros. No hay un jefe. Solo nodos confiando en otros nodos.
   - Ofrece finalidad rápida (~5 segundos) y alto rendimiento
