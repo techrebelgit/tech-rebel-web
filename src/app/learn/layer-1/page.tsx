@@ -42,7 +42,7 @@ Este curso va más allá de lo básico y te llevará por un recorrido completo a
 
 - **Definición**: Una blockchain de Capa 1 (L1) es la red base que procesa y finaliza transacciones sin depender de otra red. Mantiene su propio mecanismo de consenso, libro mayor y toda su infraestructura.
 
-![Layer 1 Networks Overview](/images/courses/layer-1/layer-1-triangle.png)
+![Layer 1 Networks Overview](/images/courses/layer-1/ayer-1-triangle.png)
 
 - **Características clave**:
   - Token nativo (por ejemplo: BTC, ETH, XLM)
@@ -398,7 +398,7 @@ Aún experimentales, con debate sobre su necesidad vs. zonas L2.
       content: `
 # Stellar
 
-  ![Layer 1 Networks Overview](/images/courses/layer-1/Stellar.png)
+  ![Layer 1 Networks Overview](/images/courses/layer-1/stellar.png)
 
 - **Lanzamiento**: 2014 por Jed McCaleb (cofundador de Ripple)
 - **Misión**: Inclusión financiera y transferencias internacionales de bajo costo
