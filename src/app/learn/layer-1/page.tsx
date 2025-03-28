@@ -313,7 +313,7 @@ La estrategia de Ethereum es la **escalabilidad modular**: mantener la capa base
 
 ## **2.5 Capas 3 (Emergentes)**
 
-Capas construidas *sobre* L2 para necesidades especializadas:
+Capas construidas *sobre* L2 para necesidades específicas:
 
 - **Rollups específicos de apps**
 - **Entornos de ejecución privados**
