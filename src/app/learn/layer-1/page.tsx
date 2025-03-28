@@ -21,7 +21,7 @@ Las blockchains de Capa 1 (Layer 1) son la base de toda la infraestructura desce
 
 Este curso va más allá de lo básico y te llevará por un recorrido completo a través de las principales redes L1 — Bitcoin, Ethereum, Stellar — y conceptos críticos como escalabilidad, interoperabilidad y diseño de nuevas blockchains.
 
-![Layer 1 Networks Overview](/images/courses/blockchain-fundamentals/layer1-overview.jpg)
+![Layer 1 Networks Overview](/images/courses/layer-1/layer-1-overview.png)
 
 ## 🌍 ¿Qué aprenderás?
 
@@ -42,12 +42,15 @@ Este curso va más allá de lo básico y te llevará por un recorrido completo a
 
 - **Definición**: Una blockchain de Capa 1 (L1) es la red base que procesa y finaliza transacciones sin depender de otra red. Mantiene su propio mecanismo de consenso, libro mayor y toda su infraestructura.
 
+![Layer 1 Networks Overview](/images/courses/layer-1/layer-1-triangle.png)
 
 - **Características clave**:
   - Token nativo (por ejemplo: BTC, ETH, XLM)
   - Disponibilidad de datos *on-chain*
   - Seguridad integrada (a través de mineros o validadores)
 
+
+![Layer 1 Networks Overview](/images/courses/layer-1/layer-1-overview.png)
 
 
 ## **1.2 Responsabilidades Clave de las Capas 1**
@@ -65,6 +68,10 @@ El Trilema de la Blockchain, acuñado por Vitalik Buterin, describe la dificulta
 2. **Seguridad** – Resistencia a ataques y protección de datos
 3. **Escalabilidad** – Capacidad de manejar muchas transacciones de forma rápida y económica
 
+![Layer 1 Networks Overview](/images/courses/layer-1/blockchain-trilemma.png)
+
+
+
 ## **1.4 Trade-offs en las Principales Capas 1**
 
 | Blockchain        | Optimizan                        | Sacrifican         | Comentario                                               |
@@ -79,6 +86,7 @@ El Trilema de la Blockchain, acuñado por Vitalik Buterin, describe la dificulta
 
 - **Capa 1**: Maneja la seguridad base, consenso y datos principales
 - **Capa 2**: Se construye encima para escalar transacciones (rollups, sidechains, canales de pago)
+![Layer 1 Networks Overview](/images/courses/layer-1/layer-1-triangle.png)
 
 ## **1.6 Evolución del Diseño de Capas 1**
 
@@ -120,8 +128,7 @@ El Trilema de la Blockchain, acuñado por Vitalik Buterin, describe la dificulta
       id: "Bitcoin",
       title: "Bitcoin",
       content: `
-
-## ** Fundamentos de Bitcoin**
+![Layer 1 Networks Overview](/images/courses/layer-1/bitcoin.png)
 
 - **Creado por**: Satoshi Nakamoto (whitepaper en 2008)
 - **Caso de uso principal**: Reserva de valor digital y moneda peer-to-peer
@@ -130,7 +137,7 @@ El Trilema de la Blockchain, acuñado por Vitalik Buterin, describe la dificulta
   - Sin permisos (*permissionless*), resistente a la censura
   - Alta seguridad gracias a Proof of Work (PoW)
 
-> 📷 *Imagen sugerida*: Fotografía/diagrama del bloque génesis de Bitcoin o portada del whitepaper
+![Layer 1 Networks Overview](/images/courses/layer-1/bitcoin-genesis-block.png)
 
 ---
 
@@ -147,8 +154,7 @@ El Trilema de la Blockchain, acuñado por Vitalik Buterin, describe la dificulta
 - **Tiempo de bloque**: ~10 minutos
 - **Finalidad de transacción**: Alcanzada tras múltiples confirmaciones (usualmente 6)
 
-> 💡 Mejora sugerida:  
-> Puedes incluir un diagrama visual del flujo de una transacción UTXO con inputs y outputs
+![Layer 1 Networks Overview](/images/courses/layer-1/UTXO.png)
 
 ---
 
@@ -157,8 +163,6 @@ El Trilema de la Blockchain, acuñado por Vitalik Buterin, describe la dificulta
 - **Escalabilidad**: ~7 transacciones por segundo (TPS)
 - **Contratos inteligentes**: Lenguaje Script limitado y no Turing completo
 - **Latencia**: Confirmaciones toman tiempo (no ideal para pagos minoristas)
-
-> 🧱 Puedes añadir una tabla comparativa rápida entre Bitcoin y redes más rápidas como Solana o Polygon
 
 ---
 
@@ -196,9 +200,6 @@ El Trilema de la Blockchain, acuñado por Vitalik Buterin, describe la dificulta
 - Contratos inteligentes y DeFi en Bitcoin con modelo PoX (*Proof of Transfer*)
 - Las apps se liquidan sobre Bitcoin, pero ejecutan lógica en otra capa
 
-> 🎯 Mejora sugerida:  
-> Añadir un gráfico con los logos y arquitectura de cada Layer 2
-
 ---
 
 ## **2.5 Filosofía y Cultura de Desarrollo**
@@ -207,7 +208,7 @@ El Trilema de la Blockchain, acuñado por Vitalik Buterin, describe la dificulta
 - **BIPs (Bitcoin Improvement Proposals)**: Propuestas formales para actualizar el protocolo
 - **Actualizaciones clave**: *SegWit*, *Taproot* (mejoran escalabilidad y privacidad)
 
-> 📌 Puedes enlazar al repositorio de BIPs: https://github.com/bitcoin/bips
+> 📌 Repositorio de BIPs: https://github.com/bitcoin/bips
 
 ---
 
@@ -217,9 +218,6 @@ El Trilema de la Blockchain, acuñado por Vitalik Buterin, describe la dificulta
 - Creciente interés en:
   - **DeFi nativo en Bitcoin** (Stacks, RSK)
   - **NFTs Ordinales** y **tokens BRC-20** (usando Taproot y witness data)
-
-> 🧠 Mejora sugerida:  
-> Añadir una línea de tiempo de hitos importantes: 2009 → SegWit → Lightning → Taproot → Ordinals
 
 ---
 
@@ -243,22 +241,17 @@ El Trilema de la Blockchain, acuñado por Vitalik Buterin, describe la dificulta
       content: `
 # 🌐 Ethereum
 
-## **Fase 5: Análisis Detallado — Ethereum**
+![Layer 1 Networks Overview](/images/courses/layer-1/ethereum.png)
 
----
-
-## **2.1 Fundamentos de Ethereum**
 
 - **Lanzado en**: 2015 por Vitalik Buterin y su equipo
 - **Objetivo**: Una blockchain programable para aplicaciones descentralizadas (dApps)
 - **Innovación clave**: **Contratos inteligentes** — código autoejecutable almacenado y ejecutado en la cadena
 - **Moneda nativa**: ETH, utilizada para pagar *gas* (comisiones computacionales)
 
-> 📷 Imagen sugerida: Diagrama mostrando la diferencia entre Bitcoin y Ethereum (valor vs. programabilidad)
-
 ---
 
-## **2.2 Arquitectura Técnica**
+## Arquitectura Técnica
 
 - **Modelo basado en cuentas**:
   - Dos tipos de cuentas: Cuentas Externas (EOAs) y Cuentas de Contrato
@@ -274,6 +267,8 @@ El Trilema de la Blockchain, acuñado por Vitalik Buterin, describe la dificulta
   - Anteriormente Proof of Work → ahora **Proof of Stake** (desde **The Merge**, 2022)
   - Validadores aseguran la red apostando ETH
 
+  ![Layer 1 Networks Overview](/images/courses/layer-1/PoWPoS.png)
+
 ---
 
 ## **2.3 Limitaciones de Ethereum**
@@ -287,6 +282,7 @@ El Trilema de la Blockchain, acuñado por Vitalik Buterin, describe la dificulta
 ## **2.4 Escalado de Ethereum: Capas 2**
 
 La estrategia de Ethereum es la **escalabilidad modular**: mantener la capa base segura y descentralizada, y mover la ejecución a entornos más rápidos y baratos.
+![Layer 1 Networks Overview](/images/courses/layer-1/layer-1-triangle.png)
 
 ### 🔁 **Rollups (Estrategia principal de L2)**
 
@@ -312,8 +308,6 @@ La estrategia de Ethereum es la **escalabilidad modular**: mantener la capa base
 - **Optimism**: Base está construido sobre él; base del OP Stack
 - **zkSync**: Pionero en UX de ZK-Rollups
 - **Scroll, Polygon zkEVM**: Compatibles con la EVM y usan pruebas ZK
-
-> 📊 Imagen sugerida: Mapa visual de las L2 con logotipos y tecnologías asociadas
 
 ---
 
@@ -343,8 +337,6 @@ Aún experimentales, con debate sobre su necesidad vs. zonas L2.
   - **Hardhat**, **Foundry**: herramientas de desarrollo
   - **MetaMask**, **WalletConnect**: conexión de usuarios
 
-> 🧩 Mejora sugerida: Muestra una tabla con las categorías del ecosistema y ejemplos de cada una
-
 ---
 
 ## **2.7 Futuro de Ethereum**
@@ -357,8 +349,6 @@ Aún experimentales, con debate sobre su necesidad vs. zonas L2.
 
 - **Verkle Trees, Clientes sin estado**:
   - Mejoras para el rendimiento y escalabilidad de la red
-
-> 🛠 Imagen sugerida: Línea de tiempo del roadmap de Ethereum (The Merge → EIP-4844 → Sharding)
 
 ---
 
@@ -382,7 +372,6 @@ Aún experimentales, con debate sobre su necesidad vs. zonas L2.
 ### 🧱 3. Escalado con Capas 2
 
 - [**L2Beat**](https://l2beat.com/) — Seguimiento visual de proyectos L2.
-- [**Ensayos de Vitalik sobre Rollups**](https://vitalik.ca/general/2021/01/05/rollup.html) — Filosofía de escalado modular.
 - [**Docs de Optimism**](https://docs.optimism.io/)
 - [**Docs de Arbitrum**](https://developer.arbitrum.io/)
 - [**Docs de zkSync**](https://docs.zksync.io/)
@@ -407,32 +396,27 @@ Aún experimentales, con debate sobre su necesidad vs. zonas L2.
       id: "stellar",
       title: "Stellar",
       content: `
-# 🌍 Stellar
+# Stellar
 
-Vamos a desglosar **Stellar**, enfocándonos en su arquitectura única, sus casos de uso en finanzas globales, y cómo **Soroban** introduce programabilidad a la red. Este módulo es perfecto para contrastar con Bitcoin y Ethereum.
-
----
-
-## **Fase 4: Análisis Detallado — Stellar**
-
----
-
-## **2.1 Fundamentos de Stellar**
+  ![Layer 1 Networks Overview](/images/courses/layer-1/Stellar.png)
 
 - **Lanzamiento**: 2014 por Jed McCaleb (cofundador de Ripple)
 - **Misión**: Inclusión financiera y transferencias internacionales de bajo costo
 - **Token nativo**: **XLM (Lumen)**
 - **Enfoque central**: Transferencia eficiente de activos digitales a través de fronteras, sin contratos inteligentes generalizados (hasta hace poco)
-
-> 💡 *Imagen sugerida*: Mapa con conexiones de remesas usando Stellar + logotipo de MoneyGram o Circle
-
 ---
 
 ## **2.2 Arquitectura y Consenso**
 
 - **Stellar Consensus Protocol (SCP)**:
   - Variante de **Federated Byzantine Agreement (FBA)**
-  - Los participantes eligen nodos confiables (*quorum slices*) en lugar de minado o staking
+  - Cada nodo elige un grupo de confianza (llamado **quorum slice**).
+  - Cuando varios grupos de confianza se superponen y coinciden, se logra **consenso** (es decir, acuerdo).
+  - ¡Y así se valida una transacción de forma segura y rápida!
+
+    ![Layer 1 Networks Overview](/images/courses/layer-1/Stellar-consensus.png)
+
+No hay mineros. No hay un jefe. Solo nodos confiando en otros nodos.
   - Ofrece finalidad rápida (~5 segundos) y alto rendimiento
   - Compromiso: eficiencia sobre descentralización total
 
@@ -443,8 +427,6 @@ Vamos a desglosar **Stellar**, enfocándonos en su arquitectura única, sus caso
 - **DEX incorporado**:
   - Soporte nativo para *order books* y pagos con rutas
   - Permite intercambios estilo Forex y conversiones automáticas entre activos
-
-> 📊 Imagen sugerida: Diagrama de consenso con *quorum slices* o flujo de path payments
 
 ---
 
@@ -505,7 +487,7 @@ Vamos a desglosar **Stellar**, enfocándonos en su arquitectura única, sus caso
 
 - [**Portal de Aprendizaje de Stellar**](https://stellar.org/learn)
   - Introducción amigable a Stellar, con guías sobre activos, cuentas y *anchors*
-- [**SCP explicado**](https://developers.stellar.org/docs/stellar-core/software/consensus/)
+- [**SCP explicado**](https://stellar.org/learn/proof-of-agreement)
   - Detalle técnico sobre el protocolo de consenso y *quorum slices*
 
 ---
@@ -545,8 +527,6 @@ Vamos a desglosar **Stellar**, enfocándonos en su arquitectura única, sus caso
 - [**Stellar Community Fund (SCF)**](https://communityfund.stellar.org/)
   - Financiamiento para aplicaciones innovadoras y herramientas en Stellar y Soroban
 
-- [**Discord de Desarrolladores Stellar**](https://discord.com/invite/stellar)
-  - Comunidad activa con canales específicos de Soroban y soporte en hackathons
 
 - [**Blog de Stellar**](https://stellar.org/blog)
   - Noticias sobre el crecimiento del ecosistema, casos de uso y avances de Soroban
@@ -554,9 +534,6 @@ Vamos a desglosar **Stellar**, enfocándonos en su arquitectura única, sus caso
 ---
 
 ### 🎥 5. Videos y Conferencias
-
-- [**Soroban Sessions (YouTube)**](https://www.youtube.com/@StellarOrg)
-  - Actualizaciones semanales, tutoriales y entrevistas con builders
 
 - **Stellar Meridian**:
   - Conferencias anuales con charlas sobre el ecosistema y desarrollo en Stellar
@@ -568,11 +545,6 @@ Vamos a desglosar **Stellar**, enfocándonos en su arquitectura única, sus caso
       id: "Interoperabilidad",
       title: "Interoperabilidad y Layer 0",
       content: `
-# 🔗 Interoperabilidad y Layer 0
-
-Exploraremos cómo los distintos blockchains pueden conectarse entre sí, qué papel juega la infraestructura Layer 0, y por qué la interoperabilidad es esencial para el futuro multichain.
-
----
 
 ## **3.1 ¿Por qué importa la interoperabilidad?**
 
@@ -582,8 +554,7 @@ Exploraremos cómo los distintos blockchains pueden conectarse entre sí, qué p
   - **dApps intercadena** (liquidez unificada, identidades compartidas, etc.)
   - **Seguridad o consenso compartido** entre cadenas
 
-> 💡 Mejora visual: Mostrar un mapa de interacciones entre cadenas (Ethereum ↔ Solana ↔ Cosmos ↔ Polkadot)
-
+  ![Layer 1 Networks Overview](/images/courses/layer-1/Layer0.png)
 ---
 
 ## **3.2 Formas de Interoperabilidad**
@@ -672,22 +643,12 @@ Exploraremos cómo los distintos blockchains pueden conectarse entre sí, qué p
 - **Interoperabilidad con ZK**: Uso de pruebas ZK para comunicación segura (ej: zkBridge)
 - **IA + Interoperabilidad**: Traducción semántica de datos y lógica autónoma multichain
 
-> 🎯 Sugerencia visual: Línea de tiempo o mapa de evolución de la interoperabilidad (2009–>Puentes–>Rollups–>Layer 0–>ZK + AI)
-
 ---
 
 ## 📚 Recursos recomendados sobre Interoperabilidad y Layer 0
 
 ---
 
-### 📖 1. Conceptos Fundamentales
-
-- [**Introducción a la Interoperabilidad – ConsenSys**](https://consensys.net/blog/news/what-is-blockchain-interoperability/)
-  - Excelente intro a los conceptos clave, con ejemplos actuales
-- [**Theses de Messari (Anual)**](https://messari.io/)
-  - Análisis estratégico del ecosistema multichain y protocolos cross-chain
-
----
 
 ### 🌐 2. Cosmos e IBC
 
@@ -711,15 +672,11 @@ Exploraremos cómo los distintos blockchains pueden conectarse entre sí, qué p
 
 - [**Docs oficiales de Avalanche**](https://docs.avax.network/)
   - Guía paso a paso para crear y personalizar subnets
-- [**Canal de YouTube de Avalanche**](https://www.youtube.com/@AvalancheAVA)
-  - Charlas, demos y casos de uso reales
 
 ---
 
 ### 🔗 5. Interoperabilidad en general
 
-- [**L2Beat: sección de interoperabilidad**](https://l2beat.com/scaling/interoperability)
-  - Seguimiento de capacidades cross-chain en L2s y puentes
 - [**Chainlink CCIP Docs**](https://docs.chain.link/ccip/)
 - [**LayerZero Docs**](https://docs.layerzero.network/)
 
@@ -729,8 +686,6 @@ Exploraremos cómo los distintos blockchains pueden conectarse entre sí, qué p
 
 - [**Casos de estudio de hacks – Rekt.news**](https://rekt.news/)
   - Post-mortems detallados sobre exploits (Ronin, Wormhole, Nomad)
-- [**Post “Endgame” de Vitalik**](https://vitalik.ca/general/2021/12/06/endgame.html)
-  - Visión a largo plazo de cómo podrían evolucionar los sistemas descentralizados
 
 
       `,
@@ -739,13 +694,6 @@ Exploraremos cómo los distintos blockchains pueden conectarse entre sí, qué p
       id: "Layer1Pros",
       title: "¿Por Qué Construir una Nueva Capa 1 (Layer 1)?",
       content: `
-# 🧱 ¿Por Qué Construir una Nueva Capa 1 (Layer 1)?
-
----
-
-## **4.1 Motivaciones para Crear una Nueva Blockchain de Capa 1**
-
----
 
 ### 🚀 A. Necesidades de Rendimiento y Escalabilidad
 
@@ -816,12 +764,9 @@ Exploraremos cómo los distintos blockchains pueden conectarse entre sí, qué p
 
 ### 🧠 1. Contexto Estratégico e Ideológico
 
-- [**Multicoin Capital: Por qué invertimos en nuevas Layer 1s**](https://multicoin.capital/2020/11/18/the-next-great-layer-1-blockchains/)
-  - Perspectiva de VC sobre qué hace atractiva una L1 y cómo se construyen efectos de red.
+
 - [**a16z – Futuro de las Capa 1**](https://a16zcrypto.com/)
   - Artículos sobre cadenas modulares, appchains y diseño de L1s.
-- [**Blog de Vitalik Buterin**](https://vitalik.ca/)
-  - Ensayos sobre consenso, escalabilidad y por qué Ethereum se mueve hacia la modularidad.
 
 ---
 
@@ -840,8 +785,6 @@ Exploraremos cómo los distintos blockchains pueden conectarse entre sí, qué p
 
 ### 💻 3. Lenguajes y Nuevos Entornos de Ejecución
 
-- [**Scrypto (Radix)**](https://www.radixdlt.com/scrypto)
-  - Lenguaje que soluciona problemas de composabilidad de contratos inteligentes.
 - [**Move Language Resources**](https://move-language.github.io/move/)
   - Lenguaje enfocado en seguridad, modularidad y determinismo.
 
@@ -864,8 +807,7 @@ Exploraremos cómo los distintos blockchains pueden conectarse entre sí, qué p
       content: `
 # 🚫 ¿Por Qué NO Construir una Nueva Blockchain de Capa 1?
 
-Aunque crear una nueva L1 puede parecer atractivo, hay numerosos desafíos técnicos, económicos y regulatorios. Esta sección te ayudará a evaluar si realmente vale la pena.
-
+Aunque crear una nueva L1 puede parecer atractivo, hay numerosos desafíos técnicos, económicos y regulatorios. 
 ---
 
 ## **5.1 El Desafío de los Efectos de Red**
@@ -878,8 +820,6 @@ Aunque crear una nueva L1 puede parecer atractivo, hay numerosos desafíos técn
 - **Es extremadamente difícil iniciar desde cero**:
   - Los usuarios van donde está la liquidez
   - Los desarrolladores van donde están los usuarios y las herramientas
-
-> 💡 Imagen sugerida: Diagrama de red mostrando concentración de usuarios/desarrolladores en cadenas existentes
 
 ---
 
@@ -946,54 +886,8 @@ Aunque crear una nueva L1 puede parecer atractivo, hay numerosos desafíos técn
 
 ---
 
-## 📚 Recursos — Por Qué NO Construir una Nueva Capa 1
 
----
-
-### 🧠 1. Argumentos Filosóficos y Estratégicos
-
-- [**Naval Ravikant: Contra la inflación de L1s**](https://twitter.com/naval/status/1479652349879638020)
-  - Crítica económica y filosófica sobre crear L1s innecesarias.
-- [**Vitalik Buterin: Abraza las L2s, no sobrecargues L1s**](https://vitalik.ca/general/2021/01/05/rollup.html)
-  - Ensayo clave sobre el poder de los rollups y la escalabilidad modular.
-- [**Podcast Bankless: The L1 Race Is Over**](https://www.bankless.com/)
-  - Debate entre líderes del sector sobre si necesitamos más L1s o mejores L2s.
-
----
-
-### 🛠 2. Desafíos del Ecosistema de Desarrolladores
-
-- [**Reporte de Desarrolladores – Electric Capital**](https://www.electriccapital.com/reports)
-  - Muestra cuán difícil es atraer devs a nuevas L1s.
-- [**Galaxy Digital: Dificultad de crear un nuevo ecosistema**](https://www.galaxy.com/research/)
-  - Analiza cómo (y por qué) muchas L1s fallan al intentar atraer usuarios y liquidez.
-
----
-
-### 🛡 3. Riesgos de Seguridad y Gobernanza
-
-- [**CryptoSec: Desafíos de Seguridad en Nuevas Cadenas**](https://cryptosec.info/)
-  - Economía de validadores, descentralización y riesgos de gobernanza
-- [**Messari Governance Tracker**](https://messari.io/governance)
-  - Evolución de gobernanza en L1s existentes—algo que nuevas cadenas deben replicar
-
----
-
-### 🧩 4. Alternativas Modulares
-
-- [**Celestia: Manifiesto Blockchain Modular**](https://blog.celestia.org/the-modular-blockchain-manifesto/)
-  - Explica cómo las dApps pueden personalizar capas sin lanzar una L1
-- [**Polygon Supernets, Avalanche Subnets, Cosmos Zones**](https://medium.com/polygon)
-  - Muestran cómo crear appchains sin la complejidad de una L1
-
----
-
-### ⚖️ 5. Regulación y Diseño de Token
-
-- [**Chris Dixon (a16z): Por qué importa el diseño de tokens**](https://a16zcrypto.com/what-tokens-are-really-for/)
-  - Cómo crear valor a largo plazo con modelos de token bien diseñados
-- [**Coin Center & Paradigm sobre regulación**](https://www.coincenter.org/)
-  - Excelentes para entender los aspectos legales de lanzar tokens
+Fin :)
       `,
     },
   ],
