@@ -56,7 +56,7 @@ export default function InvestPage() {
                   <a className="underline text-rebel-red" href="https://www.trustlesswork.com/TrustlessWorkSlides.pdf" target="_blank" rel="noopener noreferrer">View Pitch Deck</a>
                 </li>
                 <li>
-                  <strong>Raising:</strong> $700k Pre-Seed (SAFE)
+                  <strong>Raising:</strong> $800k Pre-Seed (SAFE)
                 </li>
               </ul>
             </div>

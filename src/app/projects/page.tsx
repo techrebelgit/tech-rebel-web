@@ -4,48 +4,26 @@ import { Github, Globe, Twitter } from "lucide-react"
 export default function ProjectsPage() {
   const projects = [
     {
-      title: "Quantum Computing Platform",
-      description: "A revolutionary platform that makes quantum computing accessible to developers worldwide.",
-      category: "Computing",
-      status: "In Development",
-      image: "/placeholder.svg?height=300&width=600",
-      links: [
-        { type: "website", url: "https://example.com/quantum", label: "Website" },
-        { type: "github", url: "https://github.com/techrebel/quantum", label: "GitHub" },
-        { type: "twitter", url: "https://twitter.com/quantumproject", label: "Twitter" },
-      ],
-    },
-    {
-      title: "Decentralized Identity System",
-      description: "A blockchain-based identity system that gives users full control over their digital identities.",
-      category: "Blockchain",
+      title: "Trustless Work",
+      description: "Permissionless Escrows for The New Economy.",
+      category: "Payment Infra",
       status: "Active",
       image: "/placeholder.svg?height=300&width=600",
       links: [
-        { type: "website", url: "https://example.com/identity", label: "Website" },
-        { type: "github", url: "https://github.com/techrebel/identity", label: "GitHub" },
+        { type: "website", url: "https://trustlesswork.com", label: "Website" },
+        { type: "github", url: "https://github.com/Trustless-Work", label: "GitHub" },
+        { type: "twitter", url: "https://x.com/TrustlessWork", label: "Twitter" },
       ],
     },
     {
-      title: "Neural Interface",
-      description: "A non-invasive neural interface that allows direct brain-computer communication.",
-      category: "Biotech",
-      status: "Research",
+      title: "Kindfi",
+      description: "Crowdsourcing for social impact projects",
+      category: "Blockchain Aid",
+      status: "Active",
       image: "/placeholder.svg?height=300&width=600",
       links: [
-        { type: "website", url: "https://example.com/neural", label: "Website" },
-        { type: "twitter", url: "https://twitter.com/neuralproject", label: "Twitter" },
-      ],
-    },
-    {
-      title: "Sustainable Energy Grid",
-      description: "An AI-powered energy grid that optimizes renewable energy distribution.",
-      category: "Energy",
-      status: "Pilot",
-      image: "/placeholder.svg?height=300&width=600",
-      links: [
-        { type: "github", url: "https://github.com/techrebel/energy", label: "GitHub" },
-        { type: "website", url: "https://example.com/energy", label: "Website" },
+        { type: "website", url: "https://www.kindfi.org", label: "Website" },
+        { type: "github", url: "https://github.com/kindfi-org", label: "GitHub" },
       ],
     },
   ]
