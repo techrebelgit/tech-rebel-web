@@ -15,69 +15,69 @@ export default function CohortPage() {
           <Image src={techRebelLogo} alt="Tech Rebel" width={120} height={100} />
           <Image src={trustlessLogo} alt="Trustless Work" width={100} height={100} />
         </div>
-        <h1 className="text-4xl font-bold mt-6">Cohort 1 – Call for Products</h1>
+        <h1 className="text-4xl font-bold mt-6">Cohort 1 – Convocatoria de Productos</h1>
         <p className="text-lg text-muted-foreground">
-          🚀 A builder cohort for LatAm teams working on AI & Web3 products, with a focus on fast shipping, accountability, and building in public.
+          🚀 Un cohort para equipos de LatAm que estén construyendo productos con IA y Web3, con enfoque en lanzar rápido, tener accountability y construir en público.
         </p>
         <p className="text-lg text-muted-foreground">
-          Teams building with <strong>Trustless Work</strong> or from the <strong>DojoCoding community</strong> are especially encouraged to apply.
+          Equipos que usen <strong>Trustless Work</strong> o que sean parte de la comunidad <strong>DojoCoding</strong> son especialmente bienvenidos a aplicar.
         </p>
         <p className="text-muted-foreground">
-          It’s a 6-week program. Don’t know what to build? <Link href="https://docs.trustlesswork.com/trustless-work/use-cases-unlocking-the-potential-of-smart-escrows" className="underline">Check out use cases here</Link>.
+          Es un programa de 6 semanas. ¿No sabe qué construir? <Link href="https://docs.trustlesswork.com/trustless-work/use-cases-unlocking-the-potential-of-smart-escrows" className="underline">Vea algunos casos de uso de TW aquí</Link>.
         </p>
         <Button asChild>
-          <Link href="#apply">Apply Now</Link>
+          <Link href="#apply">Aplica ahora</Link>
         </Button>
       </section>
 
       <section className="mt-16 space-y-6">
-        <h2 className="text-2xl font-semibold">🧑‍💻 Who Is This For?</h2>
-        <p>We’re calling LatAm teams that:</p>
+        <h2 className="text-2xl font-semibold">🧑‍💻 ¿Para quién es esto?</h2>
+        <p>Buscamos equipos de Latinoamérica que:</p>
         <ul className="list-disc list-inside space-y-2">
-          <li>Are actively building or validating an idea</li>
-          <li>Use AI tools and are Web3-curious</li>
-          <li>Want structure, exposure, and accountability</li>
-          <li>Operate in Spanish</li>
-          <li>Are building with <strong>Trustless Work</strong></li>
+          <li>Estén activamente construyendo o validando una idea</li>
+          <li>Usen herramientas de IA y tengan curiosidad por Web3</li>
+          <li>Busquen estructura, exposición y rendición de cuentas</li>
+          <li>Trabajen en español</li>
+          <li>Estén construyendo con <strong>Trustless Work</strong></li>
         </ul>
         <p>
-          Workshops will be held in <strong>Spanish</strong>, but most written content will be in <strong>English</strong>. You can choose to pitch in either language. We’re Spanish-first, but we understand the importance of English and see this as an opportunity to practice and improve.
+          Los talleres serán en <strong>español</strong>, pero la mayoría del contenido escrito estará en <strong>inglés</strong>. Puedes presentar tu pitch en el idioma que prefieras. Somos una comunidad en español, pero entendemos la importancia del inglés y lo vemos como una oportunidad para practicarlo.
         </p>
       </section>
 
       <section className="mt-12 space-y-6">
-        <h2 className="text-2xl font-semibold">✅ Requirements to Join</h2>
+        <h2 className="text-2xl font-semibold">✅ Requisitos para participar</h2>
         <p>
-          Tech Rebel Cohort 1 is currently exclusive to:
+          El Cohort 1 está actualmente dirigido exclusivamente a:
         </p>
         <ul className="list-disc list-inside space-y-2">
-          <li>Teams where 50% or more of members are part of the <Link className="underline" href="https://dojocoding.io/">DojoCoding</Link> community</li>
-          <li>Teams building on <Link className="underline" href="https://www.trustlesswork.com/">Trustless Work</Link></li>
+          <li>Equipos donde al menos el 50% de los miembros sean parte de la comunidad <Link className="underline" href="https://dojocoding.io/">DojoCoding</Link></li>
+          <li>Equipos que estén construyendo sobre <Link className="underline" href="https://www.trustlesswork.com/">Trustless Work</Link></li>
         </ul>
         <p className="mt-2">
-          If your team does not yet meet these requirements, you can still apply — but you’ll be placed on a waitlist.
+          Si su equipo aún no cumple con estos requisitos, igual puede aplicar, pero va a entrar a una lista de espera. Quiere forzar su entrada? Compre un NFT.
         </p>
       </section>
 
       <section className="mt-12 space-y-6">
-        <h2 className="text-2xl font-semibold">📆 Cohort Rhythm</h2>
+        <h2 className="text-2xl font-semibold">📆 Ritmo de la cohorte</h2>
         <ol className="list-decimal list-inside space-y-1">
-          <li>Intro & Goals</li>
-          <li>Customer & Validation</li>
-          <li>Prioritization & Scope</li>
-          <li>Go-To-Market & Messaging</li>
-          <li>Build & Show</li>
-          <li>Story & Wrap-Up</li>
+          <li>Introducción y objetivos</li>
+          <li>Cliente y validación</li>
+          <li>Priorización y alcance</li>
+          <li>Go-To-Market y mensaje</li>
+          <li>Construcción y demo</li>
+          <li>Historia y cierre</li>
         </ol>
       </section>
 
       <section className="mt-12 space-y-4 text-center" id="apply">
-        <h2 className="text-2xl font-semibold">🧾 Apply Now</h2>
+        <h2 className="text-2xl font-semibold">🧾 Aplica ahora</h2>
         <p>
-          Priority is given to DojoCoding teams and those building with Trustless Work. Others may apply and will be added to the waitlist.
+          Se dará prioridad a los equipos de DojoCoding y a quienes estén construyendo con Trustless Work. Otros pueden aplicar y serán añadidos a una lista de espera.
         </p>
         <Button asChild>
-          <Link href="https://tally.so/r/w2RPoe">Apply to Tech Rebel Cohort 1</Link>
+          <Link href="https://tally.so/r/w2RPoe">Aplicar a la Cohorte 1</Link>
         </Button>
       </section>
     </div>
