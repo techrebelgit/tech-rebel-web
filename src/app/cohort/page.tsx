@@ -12,7 +12,9 @@ export default function CohortPage() {
       <section className="text-center space-y-4">
         <div className="flex justify-center items-center gap-4">
           <Image src={dojoLogo} alt="Dojo Coding" width={100} height={100} />
-          <Image src={techRebelLogo} alt="Tech Rebel" width={120} height={100} />
+          <Link href="https://techrebel.world" target="_blank" rel="noopener noreferrer">
+            <Image src={techRebelLogo} alt="Tech Rebel" width={120} height={100} />
+          </Link>
           <Image src={trustlessLogo} alt="Trustless Work" width={100} height={100} />
         </div>
         <h1 className="text-4xl font-bold mt-6">Cohort 1 – Convocatoria de Productos</h1>
