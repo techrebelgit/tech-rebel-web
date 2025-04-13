@@ -6,6 +6,8 @@ import ConnectWallet from "@/components/connect-wallet";
 import Navbar from "@/components/navbar";
 import { Button } from "@/components/ui/button";
 import { Calendar, Users } from "lucide-react";
+import { TokenGate } from "@/components/gating/tokenGate";
+
 
 export default function BookPage() {
   const account = useActiveAccount();
@@ -33,7 +35,9 @@ export default function BookPage() {
             </div>
           </div>
         ) : (
-          <RequireNFTGate
+          <TokenGate
+          contractAddress={process.env.NEXT_PUBLIC_TECH_REBEL_NFT_CONTRACT!}
+
             fallback={
               <div className="bg-rebel-light p-8 rounded-xl border border-rebel-gray shadow-sm text-center">
                 <h2 className="text-2xl font-bold mb-4">NFT Required</h2>
@@ -98,7 +102,7 @@ export default function BookPage() {
                 </div>
               </div>
             </div>
-          </RequireNFTGate>
+          </TokenGate>
         )}
       </div>
     </main>
