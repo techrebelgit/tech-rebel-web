@@ -38,7 +38,7 @@ export default function ArmyBasePage() {
                   You need to own the Army NFT to access this section.
                 </p>
                 <Button className="px-6" asChild>
-                  <a href="/mint-army">Mint the Army NFT</a>
+                  <a href="/army/mint">Mint the Army NFT</a>
                 </Button>
               </div>
             }
